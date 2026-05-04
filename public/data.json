@@ -1,0 +1,107 @@
+{
+    "profile": {
+        "name": "Danial Amirul",
+        "title": "Data Analyst | Programmer",
+        "email": "danial.workrelated@gmail.com",
+        "socials": [
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/danial-amirul-610825216/"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/danial-work"
+            }
+        ]
+    },
+    "experience": [
+        {
+            "id": 1,
+            "role": "Associate Data Analyst",
+            "company": "Digitas Malaysia",
+            "url":"https://www.digitas.com/en-my/",
+            "period": "FEB 2025 — PRESENT",
+            "desc": "GA4 & GTM Expert."
+        },
+        {
+            "id": 2,
+            "role": "Google Analytics Engineer",
+            "company": "Kasatria Technologies Sdn Bhd",
+            "url":"https://www.kasatria.com/",
+            "period": "DEC 2021 — JAN 2025",
+            "desc": "Led analytics implementations & maintenance for Southeast Asian clients (dashboards, pipelines, tag management). Consistent communicator with a focus on well-maintained documentation."
+        },
+        {
+            "id": 3,
+            "role": "PHP Developer",
+            "company": "MyUni (M) Sdn Bhd",
+            "url":"https://myuni.com.my/",
+            "period": "APR 2021 — SEP 2021",
+            "desc": "Responsible for implementing features based on business requirements, utilizing expertise in JavaScript to create dynamic user interactions and a robust PHP/WordPress backend to ensure smooth functionality."
+        },
+        {
+            "id": 4,
+            "role": "Web Developer Intern",
+            "company": "iEZZPRO Incorporation Sdn Bhd",
+            "url":"https://www.iezzpro.com/",
+            "period": "AUG 2020 — SEP 2020",
+            "desc": "Develop company website (HTML, CSS, JS) that aligns with business goals. Provided IT and technical support across departments."
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "E-commerce Tracker",
+            "tech": "Vue, GTM",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+        },
+        {
+            "id": 2,
+            "title": "SFF PC Builder Tool",
+            "tech": "Python",
+            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        }
+    ],
+    "certifications": [
+    {
+        "id": 1,
+        "name": "Professional Data Engineer",
+        "issuer": "Google Cloud",
+        "image": "https://images.credly.com/size/680x680/images/2d613ff8-8879-430b-b2d8-925fa29785e8/image.png",
+        "desc": "A Professional Data Engineer makes data usable and valuable for others by collecting, transforming, and publishing data.",
+        "link": "https://www.credly.com/badges/c1655aeb-2717-4550-b4e5-ea6728e7c725",
+        "start": "OCT 2024",
+        "expiry": "OCT 2026"
+    },
+    {
+      "id": 2,
+      "name": "Google Analytics Certification",
+      "issuer": "Google",
+      "image": "https://templates.images.credential.net/16722171176440784346699372916351.png",
+      "desc": "Setup a Google Analytics 4 property for a website or an app. Collect the data you need for your business and use the various reporting tools and features.",
+      "link": "https://skillshop.credential.net/60e5ff31-9933-4f58-adb6-01d613aafeb8#acc.rdiXOITo",
+      "start": "MAY 2026",
+      "expiry": "MAY 2027"
+    },
+    {
+      "id": 3,
+      "name": "Campaign Manager 360 Certification",
+      "issuer": "Google",
+      "image": "https://templates.images.credential.net/16693033537211992365837559215987.png",
+      "desc": "Proficiency in data collection, reporting, and analysis using Adobe Analytics.",
+      "link": "https://skillshop.credential.net/6c040bc7-dee2-4670-ac35-cb5559351364#acc.19WiauYT",
+      "start": "MAY 2026",
+      "expiry": "MAY 2027"
+    },
+    {
+      "id": 4,
+      "name": "Adobe Analytics Foundations",
+      "issuer": "Adobe",
+      "image": "",
+      "desc": "Proficiency in data collection, reporting, and analysis using Adobe Analytics.",
+      "link": "https://certification.adobe.com/pdf/course/id/1054459",
+      "start": "SEP 2025",
+      "expiry": "SEP 2027"
+    }
+  ]
+}

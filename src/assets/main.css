@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46;
+}
+
+@layer base {
+    html {
+      /* 
+         This scales the base font size between 14px and 18px 
+         based on the screen width (320px to 1920px) 
+      */
+      font-size: clamp(14px, 1.2vw, 18px);
+    }
+  }
