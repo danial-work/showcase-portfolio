@@ -1,0 +1,41 @@
+[
+    {
+        "slug": "ga4-ecommerce-performance-lens",
+        "title": "Google Merch Store Analytics Workspace",
+        "subtitle": "Engineering an optimization dashboard in Looker Studio utilizing raw GA4 e-commerce schemas for retail performance auditing.",
+        "desc": "A Looker Studio dashboard connected directly to the GA4 Google Merchandise Store property, tracking conversion funnels, item performance, and marketing attribution.",
+        "featured": true,
+        "image": "https://storage.this-is-dan.com/img/portfolio_dashboard.png",
+        "heroImage": "https://storage.this-is-dan.com/img/portfolio_dashboard.png",
+        "link": "https://datastudio.google.com/u/0/reporting/f25b34e9-0a46-4c6d-9d7e-b28de2c62bc3/",
+        "meta": {
+            "role": "Data Analyst",
+            "timeline": "1 Week (Q1 2025)",
+            "stack": "Google Analytics 4, Looker Studio"
+        },
+        "overview": "Direct UI-to-UI native cloud connections often default to slow load speeds and cluttered visual spaces. This case study details the clean engineering of a retail-focused performance workspace, transforming public GA4 clickstream event parameters into actionable revenue tracking and performance scorecards.",
+        "metrics": [
+            { "value": "100%", "label": "Native GA4 Connector" },
+            { "value": "3-Step", "label": "Checkout Funnel Audit" },
+            { "value": "Real-Time", "label": "Item Array Aggregation" }
+        ],
+        "sections": [
+            {
+            "type": "text",
+            "heading": "The Analytical Challenge",
+            "content": "Modern digital retail platforms capture billions of event arrays. The primary engineering bottleneck isn't collecting data—it's mapping high-dimensional GA4 event parameters (like items, item_name, view_item, and purchase) into clean, low-latency business scorecards. This layout maps out the entire digital user journey across the Google Merchandise Store, keeping page load latency low through native component caching."
+            },
+            {
+              "type": "image",
+              "heading": "Conversion Funnel Visual Mapping",
+              "url": "https://storage.this-is-dan.com/img/portfolio_dashboard.png",
+              "caption": "Figure 1.1: Looker Studio dashboard mapping clickstream drop-off thresholds natively."
+            },
+            {
+            "type": "text",
+            "heading": "Conversion Architecture & Funnel Auditing",
+            "content": "The application leverages specific GA4 e-commerce schemas to build a strict linear progression pipeline. By isolating the 'view_item' -> 'add_to_cart' -> 'purchase' event flows, the dashboard maps visual conversion walls. This instantly lets stakeholders detect drop-off friction points, isolate lower-performing item categories, and track cross-channel marketing attribution models cleanly."
+            }
+        ]
+    }
+]

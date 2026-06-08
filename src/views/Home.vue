@@ -11,7 +11,7 @@
     <!-- Right: Projects (70%) -->
     <ProjectGallery 
       class="w-full md:w-[70%]" 
-      :projects="data.projects" 
+      :projects="featuredProjects" 
     />
 
   </div>
@@ -22,28 +22,43 @@
   </div>
 </template>
   
-  <script setup>
-  import { ref, onMounted } from 'vue';
+<script setup>
+  import { ref, computed, onMounted } from 'vue';
   import ResumeSidebar from '../components/ResumeSidebar.vue';
   import ProjectGallery from '../components/ProjectGallery.vue';
-  
+
   const data = ref(null);
-  
+  const allProjects = ref([]);
+
+  onMounted(async () => {
+    try {
+      // Note: If you are using Vite, use /data.json 
+      // to point to public/data.json
+      const res = await fetch('/data.json');
+      if (!res.ok) throw new Error("File not found");
+      data.value = await res.json();
+    } catch (err) {
+      console.error("Failed to load data:", err);
+      // FALLBACK: Useful for testing if the fetch fails
+      data.value = {
+        profile: { name: "Loading Failed", title: "Check Console", socials: [] },
+        experience: [],
+        projects: []
+      };
+    }
+  });
+
   onMounted(async () => {
   try {
-    // Note: If you are using Vite, use /data.json 
-    // to point to public/data.json
-    const res = await fetch('/data.json');
-    if (!res.ok) throw new Error("File not found");
-    data.value = await res.json();
-  } catch (err) {
-    console.error("Failed to load data:", err);
-    // FALLBACK: Useful for testing if the fetch fails
-    data.value = {
-      profile: { name: "Loading Failed", title: "Check Console", socials: [] },
-      experience: [],
-      projects: []
-    };
+    const response = await fetch('/project-content.json');
+    allProjects.value = await response.json();
+  } catch (error) {
+    console.error("Failed parsing unified projects collection:", error);
   }
-});
-  </script>
+  });
+
+  // Compute and filter out only items flagged as featured for the homepage view
+  const featuredProjects = computed(() => {
+    return allProjects.value.filter(project => project.featured);
+  });
+</script>

@@ -4,6 +4,7 @@
       <router-link to="/" class="font-bold text-xl tracking-tighter text-white">DAN.</router-link>
       <div class="space-x-8 text-sm font-medium text-zinc-400">
         <router-link to="/" class="hover:text-blue-400">Home</router-link>
+        <router-link to="/projects" class="hover:text-blue-400">Projects</router-link>
         <router-link to="/certs" class="hover:text-blue-400">My Certs</router-link>
         <router-link to="/contact" class="hover:text-blue-400">Contact</router-link>
       </div>
